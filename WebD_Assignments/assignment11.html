@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 11 - Accessibility</title>
+    <style>
+        .skip-link { position: absolute; left: -999px; }
+        .skip-link:focus { left: 10px; top: 10px; background: yellow; padding: 5px; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Accessible Web Page</h1>
+        <nav aria-label="Main navigation">
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h2>Main Content</h2>
+        <p>This page uses a language attribute, alt text, an ARIA label, a skip link and proper headings.</p>
+        <img src="photo.svg" alt="A person icon on a blue background" width="200">
+        <br><br>
+        <button aria-label="Close the message">X</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Zeeshan Khan</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 17 - Form Validation</title>
+</head>
+<body>
+    <h2>Sign Up Form with Validation</h2>
+    <form action="#" method="post">
+        <label for="name">Name (required):</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email (required):</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+        <label for="phone">Phone (10 digits):</label>
+        <input type="text" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" title="Enter 10 digits" required><br><br>
+
+        <label for="pass">Password (min 6 characters):</label>
+        <input type="password" id="pass" name="pass" minlength="6" required><br><br>
+
+        <label for="age">Age (18 to 60):</label>
+        <input type="number" id="age" name="age" min="18" max="60" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" value="Ghaziabad" readonly><br><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>

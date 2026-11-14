@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 14 - Nested and Responsive Tables</title>
+    <style>
+        .table-box { overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h2>Nested Table</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Student</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Aman</td>
+            <td>
+                <table border="1" cellpadding="5" cellspacing="0">
+                    <tr><th>Subject</th><th>Score</th></tr>
+                    <tr><td>Maths</td><td>80</td></tr>
+                    <tr><td>Physics</td><td>75</td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Responsive Table (scrolls on small screens)</h2>
+    <div class="table-box">
+        <table border="1" cellpadding="8" cellspacing="0" style="min-width: 800px;">
+            <tr>
+                <th>ID</th><th>Name</th><th>Branch</th><th>Year</th><th>City</th><th>Phone</th><th>Email</th>
+            </tr>
+            <tr>
+                <td>1</td><td>Aman</td><td>CSE-DS</td><td>1</td><td>Ghaziabad</td><td>9999999999</td><td>aman@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td><td>Sara</td><td>CSE</td><td>1</td><td>Delhi</td><td>8888888888</td><td>sara@mail.com</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
